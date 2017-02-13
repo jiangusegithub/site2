@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://telibaobei.telidh.cn/templets/tl/images/css.css" rel="stylesheet" type="text/css" />
+<link href="images/css.css.html" rel="stylesheet" type="text/css" />
+ 
+
+<script language="JavaScript" type="text/javascript" src="http://telibaobei.telidh.cn/templets/tl/images/jquery-1.7.min.js"></script> 
+<script language="JavaScript" type="text/javascript" src="http://telibaobei.telidh.cn/templets/tl/images/DD_belatedPNG.js"></script>
+<script language="JavaScript" type="text/javascript" src="http://telibaobei.telidh.cn/templets/tl/images/menu.js"></script>
+<script language="JavaScript" type="text/javascript" src="http://telibaobei.telidh.cn/templets/tl/images/thickbox.js"></script>
+<link href="http://telibaobei.telidh.cn/templets/tl/images/thickbox.css" rel="stylesheet" type="text/css" />
+
+<script> 
+
+ $(function(){
+ 	 //删除最后一个表格的底线
+ 	$(".download_box:last").addClass("download_box_end");
+ 	//记录数据
+	$(".button").click(function(){
+		$("#bag_id").val($(this).attr("val")); 
+	});
+	//表单判断
+	$("#user_Form").submit(function(){
+		var key = false;
+		if ($("#p1").val() == "") 
+			alert("请输入您的姓名！");
+		else if ($("#p2").val() == "")
+			alert("请输入您的地址！");
+		else if ($("#p3").val() == "")
+			alert("请输入您的邮编！");
+		else if ($("#p4").val() == "")
+			alert("请输入您的电话/手机！");
+		else if ($("#p5").val() == "")
+			alert("请输入电子邮箱！");	
+		else
+			key = true;
+		return key;
+	});
+ }) ;
+ 
+ </script>
+ 
+</head>
+
+<body>
+<script>
+$(function(){$("#menu > div:last").addClass("end");});
+</script>
+<div id="head_box">
+	<div id="head_bg"><img src="http://telibaobei.telidh.cn/templets/tl/images/ico_1.png" width="894" height="148" /></div>
+	<!-- menu -->
+	<div id="menu"> 
+		
+      	<div><a href='list.php-tid=15.html'><span>首页</span></a></div>
+      	
+      	<div><a href='list.php-tid=1.html'><span>泰力理念</span></a></div>
+      	
+      	<div><a href='list.php-tid=2.html'><span>免费下载</span></a></div>
+      	
+      	<div><a href='list.php-tid=3.html'><span>帮助</span></a></div>
+      	
+      	<div><a href='list.php-tid=4.html'><span>联系我们</span></a></div>
+      	
+	</div>	
+</div>
+	<!-- head_box -->
+<!--<div id="hdp_box">
+		<div id="hdb_bg"><img src="/templets/tl/images/ico_1_2.png" /></div>
+		<!-- index --> 
+		<!--<div class="banner">
+		<img src="/templets/tl/images/ico_4.jpg" width="728" height="231"  />		
+		<a href="/plus/list.php?tid=33" class="a1"><img src="/templets/tl/images/ico_20.png" /></a>
+		<a href="/plus/list.php?tid=2" class="a2"><img src="/templets/tl/images/ico_21.png" /></a>		</div>
+	</div>-->	
+	<div id="main_box" style="min-height:650px;">
+		<div class="box_title4">免费下载</div>
+			 
+		<!-- 翻页 -->
+		<div class="clear"></div>
+		
+	</div>
+<div id="uform">
+<div id="userForm">  
+<form id="user_Form" action="../action.php-a=download.html"  method="post">
+<input type="hidden" id="bag_id" name="bag_id" value=""/>
+<ul>
+<li><label>姓名：</label><input type="text" name="username" id="p1" class="txt" /> <span>*</span></li>
+<li><label>地址：</label><input type="text" name="address" id="p2" class="txt"/> <span>*</span></li>
+<li><label>邮编：</label><input type="text" name="postcode" id="p3" class="txt"/> <span>*</span></li>
+<li><label>电话/手机：</label><input type="text" name="phone" id="p4" class="txt"/> <span>*</span></li>
+<li><label>电子邮箱：</label><input type="text" name="email" id="p5" class="txt"/> <span>*</span></li> 
+<li class="btn_li">
+<input type="submit" class="btn ico1" value=" "/>
+<!--<input type="submit" class="btn ico2" value=" "/>-->
+</li> 
+</ul>
+<div class="clear"></div>
+</form>
+</div>
+</div>
+	<!-- link -->
+<link href="images/css.css.html" rel="stylesheet" type="text/css" />
+<div id="index_link">
+	<div class="title">合作信息</div>
+	<div class="list_box">
+		<div class="list">
+		<div class="img">
+		<a href=''>
+		<img src="../uploads/allimg/111224/1-111224145A50-L.jpg" width="99" height="32" border="0" /></a><br />
+		<a href='http://www.google.com'>谷歌</a>
+		</div>
+<div class="img">
+		<a href=''>
+		<img src="../uploads/allimg/111224/1-1112241459270-L.gif" width="99" height="32" border="0" /></a><br />
+		<a href='http://www.baidu.com'>百度</a>
+		</div>
+ 
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<div class="txt">
+		<a href="list.php-tid=6.html">关于我们</a>  |  
+		<a href="list.php-tid=4.html">联系我们</a>  |  
+		<a href="list.php-tid=7.html">使用协议</a>  |  
+		<a href="list.php-tid=8.html">隐私版权</a>    
+		Copyright© 2006 - 2017 Mobinex, Inc. All Rights Reserved.沪ICP备100139554号-2</div>
+</div>	
+
+</body>
+</html>
